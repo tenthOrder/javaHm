@@ -5,21 +5,21 @@ public class Program {
 		//System.out.println(Integer.toBinaryString(number));
 		String answer = new String();
 		answer = number % 2 + answer;
-		number = number / 2;
+		number /= 2;
 		answer = number % 2 + answer;
-		number = number / 2;
+		number /= 2;
 		answer = number % 2 + answer;
-		number = number / 2;
+		number /= 2;
 		answer = number % 2 + answer;
-		number = number / 2;
+		number /= 2;
 		answer = number % 2 + answer;
-		number = number / 2;
+		number /= 2;
 		answer = number % 2 + answer;
-		number = number / 2;
+		number /= 2;
 		answer = number % 2 + answer;
-		number = number / 2;
+		number /= 2;
 		answer = number % 2 + answer;
-		number = number / 2;
+		number /= 2;
 		System.out.println(answer);
 	}
 }
