@@ -22,5 +22,3 @@ public class Program {
 		System.out.println(answer);
 	}
 }
-//some stuff
-//some more stuff
