@@ -35,6 +35,27 @@ public class ParkingLot {
         parkingLot[spot] = null;
     }
 
+    public void leave(String registrationNumber) {
+        int spot = find(registrationNumber);
+        if (spot != -1) {
+            leave(spot);
+        }
+    }
+
+    /*
+     *  finds first Transport with a given registration number
+     *  and returns its spot number,
+     *  if no such element is found returns -1;
+     */
+    private int find(String registrationNumber) {
+        for (int i = 0; i < size; i++) {
+            if (registrationNumber.equals(parkingLot[i].getRegistrationNumber())) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     //returns null if the spot is empty
     public String getRegistrationNumber(int spot) {
         if (parkingLot[spot] == null) {
@@ -43,3 +64,5 @@ public class ParkingLot {
         return parkingLot[spot].getRegistrationNumber();
     }
 }
+
+
