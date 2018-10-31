@@ -15,7 +15,7 @@ public class ComplexNumber extends Number {
             output.append(a);
         }
         if (b != 0) {
-            if (b > 0) {
+            if (b > 0 && output.length() > 0) {
                 output.append("+");
             }
             output.append(b);

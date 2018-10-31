@@ -17,21 +17,21 @@ public class Quaternion extends ComplexNumber {
             output.append(a);
         }
         if (b != 0) {
-            if (b > 0) {
+            if (b > 0 && output.length() > 0) {
                 output.append("+");
             }
             output.append(b);
             output.append("i");
         }
         if (c != 0) {
-            if (c > 0) {
+            if (c > 0 && output.length() > 0) {
                 output.append("+");
             }
             output.append(c);
             output.append("j");
         }
         if (d != 0) {
-            if (d > 0) {
+            if (d > 0 && output.length() > 0) {
                 output.append("+");
             }
             output.append(d);
