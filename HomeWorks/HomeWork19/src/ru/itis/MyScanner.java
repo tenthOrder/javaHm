@@ -32,11 +32,13 @@ public class MyScanner {
         return character;
     }
 
+	//неверно, нужно переписать самому, не используя Integer.parseInt()
     public int nextInt() throws IOException {
         String intAsString = nextString();
         return Integer.parseInt(intAsString);
     }
-
+	
+	//неверно, нужно переписать самому, не используя Double.parseDouble()
     public double nextDouble() throws IOException {
         String doubleAsString = nextString();
         return Double.parseDouble(doubleAsString);
