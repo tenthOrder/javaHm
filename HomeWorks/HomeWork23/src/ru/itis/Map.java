@@ -28,7 +28,12 @@ public class Map<K, V> {
     public void put(K key, V value) {
         int index = getIndex(key);
         if (entries[index] != null) {
-            collisionCount++;
+            if (entries[index].key.equals(key)) {
+                entries[index].value = value;
+                return;
+            } else {
+                collisionCount++;
+            }
         }
         entries[index] = new Entry<>(key, value);
     }
