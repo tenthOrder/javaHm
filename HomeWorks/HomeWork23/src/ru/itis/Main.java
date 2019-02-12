@@ -24,5 +24,7 @@ public class Main {
             map.put(randomStrings[i], 0);
         }
         System.out.println(map.getCollisionCount());
+        map.put(randomStrings[40], 1);
+        System.out.println(map.get(randomStrings[40]));
     }
 }
